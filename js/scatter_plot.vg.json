@@ -5,7 +5,7 @@
     "height": 600,
     "description": "A scatterplot showing horsepower and miles per gallons for various cars.",
     "data": {
-        "url": "https://raw.githubusercontent.com/CheeMinHao/fit3179-homework/main/data/co2_emissions_by_country.csv"
+        "url": "https://raw.githubusercontent.com/AllyTeh/Homework-Week10/main/Data/co2_emissions_by_country.csv"
     },
     "params": [
         {

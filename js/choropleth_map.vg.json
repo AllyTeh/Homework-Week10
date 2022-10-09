@@ -6,7 +6,7 @@
     "vconcat": [
       {
         "title": "CO2 Emissions by Country",
-        "width": 800,
+        "width": 900,
         "height": 600,
         "projection": {
           "type": "equalEarth"
@@ -56,11 +56,11 @@
                   ]
                 }
               },
-              {"calculate": "datum.CO2Emissions/datum.Population * 1000", "as": "CO2 Emissions per 10,000 Population"}
+              {"calculate": "datum.CO2Emissions/datum.Population * 1000", "as": "CO2 Emissions per 10k Population"}
             ],
             "encoding": {
               "color": {
-                "field": "CO2 Emissions per 10,000 Population",
+                "field": "CO2 Emissions per 10k Population",
                 "type": "quantitative",
                 "scale": {
                   "type": "threshold",
@@ -111,7 +111,7 @@
                     "filter": "datum.ranking == 1"
                   },
                   {
-                    "calculate": "'Highest CO2 Emission by a Country: ' + datum['CO2Emissions']",
+                    "calculate": "'Highest CO2 Emission by a Country: ' + datum['CO2Emissions'] + datum['properties.NAME']",
                     "as": "text_annotation"
                   }
                 ],
