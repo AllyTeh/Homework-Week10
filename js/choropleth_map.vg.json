@@ -111,13 +111,13 @@
                     "filter": "datum.ranking == 1"
                   },
                   {
-                    "calculate": "'Highest CO2 Emission by a Country: ' + datum['CO2Emissions'] + datum['properties.NAME']",
+                    "calculate": "'Highest CO2 Emission by a Country: ' + datum['CO2Emissions'] ",
                     "as": "text_annotation"
                   }
                 ],
                 "mark": {
                   "type": "text",
-                  "align": "left",
+                  "align": "right",
                   "dx": 4,
                   "fill": "black"
                 },
